@@ -14,12 +14,14 @@ public class CreateInstrumStmt {
                                      HashMap<String, String> bindingMap) throws BadPositionCategoryException, IOException {
 
         StringBuilder sb =new StringBuilder();
+        String pathString = path.subpath(6,10).toString();
+        pathString=pathString.replace("\\","\\\\");
         if(! operands.isEmpty()) {
             sb.append("eclipse.ast.parser.InstrumentationTemplate.instrum(").append("\"");
-                    sb.append(" line number ").append("\"").append(" + ").append(lineNo).append(" + ").append("\"").append(" ").append(type).append(" ").append("\"");
+                    sb.append(" line number ").append("\"").append(" + ").append("\"").append(" | ").append("\"").append(" + ").append(lineNo).append(" + ").append("\"").append(" | ").append("\"").append(" + ").append("\"").append(expression).append("\"").append(" + ").append("\"").append(" | ").append("\"").append(" + ").append("\"").append(pathString).append("\"").append(" + ").append("\"").append(" | ").append("\"").append(" + ").append("\"").append(" ").append(type).append(" ").append("\"");
 
             for(String op : operands){
-                sb.append(" + ").append(" \"").append(" ").append(bindingMap.get(op.toString()) != null ? bindingMap.get(op.toString()) : op.toString()).append(" = \"").append(" + ").append(op);
+                sb.append(" + ").append("\"").append(" | ").append("\"").append(" + ").append(" \"").append(" ").append(bindingMap.get(op.toString()) != null ? bindingMap.get(op.toString()) : op.toString()).append(" = \"").append(" + ").append(op);
             }
             sb.append(");");
             StringBuilder strbuild = new StringBuilder();
