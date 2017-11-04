@@ -1,5 +1,8 @@
 package com.object.oriented.mutation.launcher.app;
 
+
+import net.openhft.hashing.LaunchTestCases;
+
 public class Launcher {
 
     public static void main(String[] args) {
@@ -29,8 +32,7 @@ public class Launcher {
     }
 
     private static void runTestCaseToGenerateTrace(){
-        // input -
-        //output - trace file
+        LaunchTestCases.launchTest();
     }
 
     private static void readTraceAndGenerateMutationTable(){
