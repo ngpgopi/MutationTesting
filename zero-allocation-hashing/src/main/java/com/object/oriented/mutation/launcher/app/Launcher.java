@@ -6,6 +6,11 @@ import javassist.CtClass;
 import javassist.NotFoundException;
 import net.openhft.hashing.LaunchTestCases;
 
+import java.io.File;
+import java.io.IOException;
+
+import static com.object.oriented.mutation.launcher.app.ConfigFileLoader.loadVarRegex;
+
 public class Launcher {
 
 
@@ -41,11 +46,34 @@ public class Launcher {
 
        // runTestCaseToGenerateTrace();
 
+		createTraceBackup();
 
+
+
+        runTestCaseToGenerateTrace();
+
+        traceFileComparator();    }
+
+    private static void traceFileComparator() {
+        try {
+            TraceFileComparator.hashCodeComparator();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void createTraceBackup() {
+        String filePath = "TraceFile.txt";
+        File fileToBackup = new File(filePath);
+        filePath = "UnMutatedTraceFile.txt";
+        File newFile = new File(filePath);
+        fileToBackup.renameTo(newFile);
 
     }
 
     private static void readConfigFile() {
+        //loadConfig();
+        loadVarRegex();
     }
 
     private static void runParser(){
