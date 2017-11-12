@@ -11,11 +11,6 @@ public class LaunchTestCases {
             for (Failure failure : result.getFailures()){
                 System.out.println(failure.toString());
             }
-
-            result = JUnitCore.runClasses(FarmHashTest.class);
-            for (Failure failure : result.getFailures()){
-                System.out.println(failure.toString());
-            }
     }
 
 }
