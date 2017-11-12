@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="akshay_vedpathak_mohammed_noman_mulla_sylvester_raj_hw3-zero-allocation-hashing_test" target="1.8" />
+      <module name="zero-allocation-hashing_main" target="1.8" />
+      <module name="zero-allocation-hashing_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
