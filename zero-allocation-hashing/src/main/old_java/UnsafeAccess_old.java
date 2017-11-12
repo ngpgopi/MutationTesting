@@ -40,11 +40,23 @@ final class UnsafeAccess extends Access<Object> {
             theUnsafe.setAccessible(true);
             UNSAFE = (Unsafe) theUnsafe.get(null);
             BOOLEAN_BASE = UNSAFE.arrayBaseOffset(boolean[].class);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 42 + " ASSIGNMENT " +  " static final sun.misc.Unsafe UNSAFE = " + UNSAFE +  " static final long BOOLEAN_BASE = " + BOOLEAN_BASE);
+
             BYTE_BASE = UNSAFE.arrayBaseOffset(byte[].class);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 43 + " ASSIGNMENT " +  " static final long BYTE_BASE = " + BYTE_BASE +  " static final sun.misc.Unsafe UNSAFE = " + UNSAFE);
+
             CHAR_BASE = UNSAFE.arrayBaseOffset(char[].class);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 44 + " ASSIGNMENT " +  " static final long CHAR_BASE = " + CHAR_BASE +  " static final sun.misc.Unsafe UNSAFE = " + UNSAFE);
+
             SHORT_BASE = UNSAFE.arrayBaseOffset(short[].class);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 45 + " ASSIGNMENT " +  " static final sun.misc.Unsafe UNSAFE = " + UNSAFE +  " static final long SHORT_BASE = " + SHORT_BASE);
+
             INT_BASE = UNSAFE.arrayBaseOffset(int[].class);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 46 + " ASSIGNMENT " +  " static final sun.misc.Unsafe UNSAFE = " + UNSAFE +  " static final long INT_BASE = " + INT_BASE);
+
             LONG_BASE = UNSAFE.arrayBaseOffset(long[].class);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 47 + " ASSIGNMENT " +  " static final long LONG_BASE = " + LONG_BASE +  " static final sun.misc.Unsafe UNSAFE = " + UNSAFE);
+
         } catch (Exception e) {
             throw new AssertionError(e);
         }

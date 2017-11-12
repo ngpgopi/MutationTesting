@@ -77,31 +77,43 @@ class XxHash {
                 v1 += fetch64(access, input, off) * P2;
                 v1 = Long.rotateLeft(v1, 31);
                 v1 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 79 + " | " + "v1 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v1 = " + v1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 79 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v1 = " + v1);
 
 
                 v2 += fetch64(access, input, off + 8) * P2;
                 v2 = Long.rotateLeft(v2, 31);
                 v2 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 85 + " | " + "v2 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v2 = " + v2);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 83 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v2 = " + v2);
 
 
                 v3 += fetch64(access, input, off + 16) * P2;
                 v3 = Long.rotateLeft(v3, 31);
                 v3 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 91 + " | " + "v3 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v3 = " + v3);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 87 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v3 = " + v3);
 
 
                 v4 += fetch64(access, input, off + 24) * P2;
                 v4 = Long.rotateLeft(v4, 31);
                 v4 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 97 + " | " + "v4 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v4 = " + v4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 91 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v4 = " + v4);
 
 
                 off += 32;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 101 + " | " + "off += 32;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " off = " + off);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 93 + " ASSIGNMENT " +  " off = " + off);
 
                 remaining -= 32;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 104 + " | " + "remaining -= 32;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " remaining = " + remaining);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 94 + " ASSIGNMENT " +  " remaining = " + remaining);
 
             } while (remaining >= 32);
@@ -112,87 +124,133 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 94 + " ASSI
                 + Long.rotateLeft(v4, 18);
 
             v1 *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 114 + " | " + "v1 *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P2 = " + P2 + " | " +  " v1 = " + v1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 102 + " ASSIGNMENT " +  " private static final long P2 = " + P2 +  " v1 = " + v1);
 
             v1 = Long.rotateLeft(v1, 31);
             v1 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 79 + " | " + "v1 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v1 = " + v1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 79 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v1 = " + v1);
 
             hash ^= v1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 121 + " | " + "hash ^= v1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " v1 = " + v1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 105 + " ASSIGNMENT " +  " v1 = " + v1);
 
             hash = hash * P1 + P4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 124 + " | " + "hash = hash * P1 + P4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " private static final long P4 = " + P4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 106 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " private static final long P4 = " + P4);
 
 
             v2 *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 128 + " | " + "v2 *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P2 = " + P2 + " | " +  " v2 = " + v2);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 108 + " ASSIGNMENT " +  " private static final long P2 = " + P2 +  " v2 = " + v2);
 
             v2 = Long.rotateLeft(v2, 31);
             v2 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 85 + " | " + "v2 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v2 = " + v2);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 83 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v2 = " + v2);
 
             hash ^= v2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 135 + " | " + "hash ^= v2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " v2 = " + v2);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 111 + " ASSIGNMENT " +  " v2 = " + v2);
 
             hash = hash * P1 + P4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 124 + " | " + "hash = hash * P1 + P4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " private static final long P4 = " + P4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 106 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " private static final long P4 = " + P4);
 
 
             v3 *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 142 + " | " + "v3 *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P2 = " + P2 + " | " +  " v3 = " + v3);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 114 + " ASSIGNMENT " +  " private static final long P2 = " + P2 +  " v3 = " + v3);
 
             v3 = Long.rotateLeft(v3, 31);
             v3 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 91 + " | " + "v3 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v3 = " + v3);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 87 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v3 = " + v3);
 
             hash ^= v3;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 149 + " | " + "hash ^= v3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " v3 = " + v3);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 117 + " ASSIGNMENT " +  " v3 = " + v3);
 
             hash = hash * P1 + P4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 124 + " | " + "hash = hash * P1 + P4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " private static final long P4 = " + P4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 106 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " private static final long P4 = " + P4);
 
 
             v4 *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 156 + " | " + "v4 *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P2 = " + P2 + " | " +  " v4 = " + v4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 120 + " ASSIGNMENT " +  " private static final long P2 = " + P2 +  " v4 = " + v4);
 
             v4 = Long.rotateLeft(v4, 31);
             v4 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 97 + " | " + "v4 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " v4 = " + v4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 91 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " v4 = " + v4);
 
             hash ^= v4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 163 + " | " + "hash ^= v4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " v4 = " + v4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 123 + " ASSIGNMENT " +  " v4 = " + v4);
 
             hash = hash * P1 + P4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 124 + " | " + "hash = hash * P1 + P4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " private static final long P4 = " + P4);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 106 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " private static final long P4 = " + P4);
 
         } else {
             hash = seed + P5;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 170 + " | " + "hash = seed + P5;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P5 = " + P5);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 126 + " ASSIGNMENT " +  " private static final long P5 = " + P5);
 
         }
 
         hash += length;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 175 + " | " + "hash += length;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " length = " + length);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 129 + " ASSIGNMENT " +  " length = " + length);
 
 
         while (remaining >= 8) {
             long k1 = fetch64(access, input, off);
             k1 *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 181 + " | " + "k1 *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P2 = " + P2 + " | " +  " k1 = " + k1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 133 + " ASSIGNMENT " +  " private static final long P2 = " + P2 +  " k1 = " + k1);
 
             k1 = Long.rotateLeft(k1, 31);
             k1 *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 185 + " | " + "k1 *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P1 = " + P1 + " | " +  " k1 = " + k1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 135 + " ASSIGNMENT " +  " private static final long P1 = " + P1 +  " k1 = " + k1);
 
             hash ^= k1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 188 + " | " + "hash ^= k1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " k1 = " + k1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 136 + " ASSIGNMENT " +  " k1 = " + k1);
 
             hash = Long.rotateLeft(hash, 27) * P1 + P4;
             off += 8;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 192 + " | " + "off += 8;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " off = " + off);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 138 + " ASSIGNMENT " +  " off = " + off);
 
             remaining -= 8;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 195 + " | " + "remaining -= 8;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " remaining = " + remaining);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 139 + " ASSIGNMENT " +  " remaining = " + remaining);
 
         }
@@ -201,9 +259,13 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 139 + " ASS
             hash ^= fetch32(access, input, off) * P1;
             hash = Long.rotateLeft(hash, 23) * P2 + P3;
             off += 4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 203 + " | " + "off += 4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " off = " + off);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 145 + " ASSIGNMENT " +  " off = " + off);
 
             remaining -= 4;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 206 + " | " + "remaining -= 4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " remaining = " + remaining);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 146 + " ASSIGNMENT " +  " remaining = " + remaining);
 
         }
@@ -221,10 +283,14 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 146 + " ASS
     private static long finalize(long hash) {
         hash ^= hash >>> 33;
         hash *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 223 + " | " + "hash *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P2 = " + P2);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 161 + " ASSIGNMENT " +  " private static final long P2 = " + P2);
 
         hash ^= hash >>> 29;
         hash *= P3;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 227 + " | " + "hash *= P3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P3 = " + P3);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 163 + " ASSIGNMENT " +  " private static final long P3 = " + P3);
 
         hash ^= hash >>> 32;
@@ -283,17 +349,25 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 163 + " ASS
         @Override
         public long hashLong(long input) {
             input = NATIVE_XX.toLittleEndian(input);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 285 + " | " + "input = NATIVE_XX.toLittleEndian(input);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final net.openhft.hashing.XxHash NATIVE_XX = " + NATIVE_XX);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 219 + " ASSIGNMENT " +  " input = " + input +  " private static final net.openhft.hashing.XxHash NATIVE_XX = " + NATIVE_XX);
 
             long hash = seed() + P5 + 8;
             input *= P2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 289 + " | " + "input *= P2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final long P2 = " + P2);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 221 + " ASSIGNMENT " +  " input = " + input +  " private static final long P2 = " + P2);
 
             input = Long.rotateLeft(input, 31);
             input *= P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 293 + " | " + "input *= P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final long P1 = " + P1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 223 + " ASSIGNMENT " +  " input = " + input +  " private static final long P1 = " + P1);
 
             hash ^= input;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 296 + " | " + "hash ^= input;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 224 + " ASSIGNMENT " +  " input = " + input);
 
             hash = Long.rotateLeft(hash, 27) * P1 + P4;
@@ -303,10 +377,14 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 224 + " ASS
         @Override
         public long hashInt(int input) {
             input = NATIVE_XX.toLittleEndian(input);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 285 + " | " + "input = NATIVE_XX.toLittleEndian(input);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final net.openhft.hashing.XxHash NATIVE_XX = " + NATIVE_XX);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 219 + " ASSIGNMENT " +  " input = " + input +  " private static final net.openhft.hashing.XxHash NATIVE_XX = " + NATIVE_XX);
 
             long hash = seed() + P5 + 4;
             hash ^= Primitives.unsignedInt(input) * P1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 309 + " | " + "hash ^= Primitives.unsignedInt(input) * P1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final long P1 = " + P1);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 233 + " ASSIGNMENT " +  " input = " + input +  " private static final long P1 = " + P1);
 
             hash = Long.rotateLeft(hash, 23) * P2 + P3;
@@ -316,14 +394,20 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 233 + " ASS
         @Override
         public long hashShort(short input) {
             input = NATIVE_XX.toLittleEndian(input);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 285 + " | " + "input = NATIVE_XX.toLittleEndian(input);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final net.openhft.hashing.XxHash NATIVE_XX = " + NATIVE_XX);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 219 + " ASSIGNMENT " +  " input = " + input +  " private static final net.openhft.hashing.XxHash NATIVE_XX = " + NATIVE_XX);
 
             long hash = seed() + P5 + 2;
             hash ^= Primitives.unsignedByte(input) * P5;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 322 + " | " + "hash ^= Primitives.unsignedByte(input) * P5;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final long P5 = " + P5);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 242 + " ASSIGNMENT " +  " input = " + input +  " private static final long P5 = " + P5);
 
             hash = Long.rotateLeft(hash, 11) * P1;
             hash ^= Primitives.unsignedByte(input >> 8) * P5;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 326 + " | " + "hash ^= Primitives.unsignedByte(input >> 8) * P5;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final long P5 = " + P5);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 244 + " ASSIGNMENT " +  " input = " + input +  " private static final long P5 = " + P5);
 
             hash = Long.rotateLeft(hash, 11) * P1;
@@ -339,6 +423,8 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 244 + " ASS
         public long hashByte(byte input) {
             long hash = seed() + P5 + 1;
             hash ^= Primitives.unsignedByte(input) * P5;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 322 + " | " + "hash ^= Primitives.unsignedByte(input) * P5;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " private static final long P5 = " + P5);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 242 + " ASSIGNMENT " +  " input = " + input +  " private static final long P5 = " + P5);
 
             hash = Long.rotateLeft(hash, 11) * P1;
@@ -372,6 +458,8 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 242 + " ASS
         private AsLongHashFunctionSeeded(long seed) {
             this.seed = seed;
             voidHash = XxHash.finalize(seed + P5);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 374 + " | " + "voidHash = XxHash.finalize(seed + P5);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final long P5 = " + P5 + " | " +  " private final long voidHash = " + voidHash);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 288 + " ASSIGNMENT " +  " private static final long P5 = " + P5 +  " private final long voidHash = " + voidHash);
 
         }

@@ -76,7 +76,11 @@ public abstract class LongHashFunction implements Serializable {
         byte trueByteValue, falseByteValue;
         try {
             trueByteValue = trueByteValue();
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 78 + " EXPRESSION " +  " trueByteValue = " + trueByteValue);
+
             falseByteValue = falseByteValue();
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 79 + " EXPRESSION " +  " falseByteValue = " + falseByteValue);
+
         } catch (Throwable t) {
             // Unsafe in pre-Nougat Android does not have getByte(), fall back to some reasonable value
             trueByteValue = 1;
@@ -84,7 +88,11 @@ public abstract class LongHashFunction implements Serializable {
         }
 
         TRUE_BYTE_VALUE = trueByteValue;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 86 + " ASSIGNMENT " +  " private static final byte TRUE_BYTE_VALUE = " + TRUE_BYTE_VALUE);
+
         FALSE_BYTE_VALUE = falseByteValue;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 87 + " ASSIGNMENT " +  " private static final byte FALSE_BYTE_VALUE = " + FALSE_BYTE_VALUE);
+
     }
 
     private static byte trueByteValue() {
@@ -297,21 +305,31 @@ public abstract class LongHashFunction implements Serializable {
                 if (javaVersion.compareTo("1.7.0_06") >= 0) {
                     if (javaVersion.compareTo("1.9") >= 0) {
                         stringHash = UnknownJvmStringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 299 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
+
                     } else {
                         stringHash = ModernHotSpotStringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 301 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
+
                     }
                 } else {
                     stringHash = HotSpotPrior7u6StringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 304 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
+
                 }
             } else {
                 // try to initialize this version anyway
                 stringHash = HotSpotPrior7u6StringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 304 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
+
             }
         } catch (Throwable e) {
             // ignore
         } finally {
             if (stringHash == null)
                 stringHash = UnknownJvmStringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 299 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
+
         }
     }
 

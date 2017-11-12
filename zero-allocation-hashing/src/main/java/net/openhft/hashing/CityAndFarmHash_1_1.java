@@ -136,10 +136,10 @@ class CityAndFarmHash_1_1 {
         long y = (reverseBytes((v + w) * mul) + g) * mul;
         long z = e + f + c;
         a = reverseBytes((x + z) * mul + y) + b;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 138 + " ASSIGNMENT " +  " a = " + a +  " b = " + b +  " x = " + x +  " y = " + y +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 138 + " | " + "a = reverseBytes((x + z) * mul + y) + b;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " b = " + b + " | " +  " x = " + x + " | " +  " y = " + y + " | " +  " z = " + z);
 
         b = shiftMix((z + a) * mul + d + h) * mul;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 139 + " ASSIGNMENT " +  " a = " + a +  " b = " + b +  " d = " + d +  " h = " + h +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 139 + " | " + "b = shiftMix((z + a) * mul + d + h) * mul;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " b = " + b + " | " +  " d = " + d + " | " +  " h = " + h + " | " +  " z = " + z);
 
         return b + x;
     }
@@ -172,19 +172,19 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 139 + " ASS
         long y4 = fetch64(access, in, off + len - 64L + 16L);
         long z4 = fetch64(access, in, off + len - 64L + 24L);
         a3 += w4;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 170 + " ASSIGNMENT " +  " a3 = " + a3 +  " w4 = " + w4);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 170 + " | " + "a3 += w4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a3 = " + a3 + " | " +  " w4 = " + w4);
 
         b3 = rotateRight(b3 + a3 + z4, 21);
         long c3 = a3;
         a3 += x4 + y4;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 173 + " ASSIGNMENT " +  " a3 = " + a3 +  " y4 = " + y4 +  " x4 = " + x4);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 173 + " | " + "a3 += x4 + y4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a3 = " + a3 + " | " +  " y4 = " + y4 + " | " +  " x4 = " + x4);
 
         b3 += rotateRight(a3, 44);
         vFirst = a3 + z4;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 175 + " ASSIGNMENT " +  " a3 = " + a3 +  " z4 = " + z4 +  " vFirst = " + vFirst);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 175 + " | " + "vFirst = a3 + z4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a3 = " + a3 + " | " +  " z4 = " + z4 + " | " +  " vFirst = " + vFirst);
 
         vSecond = b3 + c3;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 176 + " ASSIGNMENT " +  " c3 = " + c3 +  " b3 = " + b3 +  " vSecond = " + vSecond);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 176 + " | " + "vSecond = b3 + c3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " c3 = " + c3 + " | " +  " b3 = " + b3 + " | " +  " vSecond = " + vSecond);
 
 
         // WeakHashLen32WithSeeds
@@ -195,31 +195,31 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 176 + " ASS
         long y3 = fetch64(access, in, off + len - 32L + 16L);
         long z3 = fetch64(access, in, off + len - 32L + 24L);
         a2 += w3;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 185 + " ASSIGNMENT " +  " a2 = " + a2 +  " w3 = " + w3);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 185 + " | " + "a2 += w3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a2 = " + a2 + " | " +  " w3 = " + w3);
 
         b2 = rotateRight(b2 + a2 + z3, 21);
         long c2 = a2;
         a2 += x3 + y3;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 188 + " ASSIGNMENT " +  " a2 = " + a2 +  " y3 = " + y3 +  " x3 = " + x3);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 188 + " | " + "a2 += x3 + y3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a2 = " + a2 + " | " +  " y3 = " + y3 + " | " +  " x3 = " + x3);
 
         b2 += rotateRight(a2, 44);
         wFirst = a2 + z3;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 190 + " ASSIGNMENT " +  " a2 = " + a2 +  " wFirst = " + wFirst +  " z3 = " + z3);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 190 + " | " + "wFirst = a2 + z3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a2 = " + a2 + " | " +  " wFirst = " + wFirst + " | " +  " z3 = " + z3);
 
         wSecond = b2 + c2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 191 + " ASSIGNMENT " +  " b2 = " + b2 +  " wSecond = " + wSecond +  " c2 = " + c2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 191 + " | " + "wSecond = b2 + c2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " b2 = " + b2 + " | " +  " wSecond = " + wSecond + " | " +  " c2 = " + c2);
 
 
         x = x * K1 + fetch64(access, in, off);
 
         len = (len - 1L) & (~63L);
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 195 + " ASSIGNMENT " +  " len = " + len +  " 1L = " + 1L +  " ~63L = " + ~63L);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 195 + " | " + "len = (len - 1L) & (~63L);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " len = " + len + " | " +  " 1L = " + 1L + " | " +  " ~63L = " + ~63L);
 
         do {
             x = rotateRight(x + y + vFirst + fetch64(access, in, off + 8L), 37) * K1;
             y = rotateRight(y + vSecond + fetch64(access, in, off + 48L), 42) * K1;
             x ^= wSecond;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 199 + " ASSIGNMENT " +  " x = " + x +  " wSecond = " + wSecond);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 199 + " | " + "x ^= wSecond;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " wSecond = " + wSecond);
 
             y += vFirst + fetch64(access, in, off + 40L);
             z = rotateRight(z + wFirst, 33) * K1;
@@ -232,19 +232,19 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 199 + " ASS
             long y2 = fetch64(access, in, off + 16L);
             long z2 = fetch64(access, in, off + 24L);
             a1 += w2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 210 + " ASSIGNMENT " +  " a1 = " + a1 +  " w2 = " + w2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 210 + " | " + "a1 += w2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " w2 = " + w2);
 
             b1 = rotateRight(b1 + a1 + z2, 21);
             long c1 = a1;
             a1 += x2 + y2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 213 + " ASSIGNMENT " +  " a1 = " + a1 +  " y2 = " + y2 +  " x2 = " + x2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 213 + " | " + "a1 += x2 + y2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " y2 = " + y2 + " | " +  " x2 = " + x2);
 
             b1 += rotateRight(a1, 44);
             vFirst = a1 + z2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 215 + " ASSIGNMENT " +  " a1 = " + a1 +  " z2 = " + z2 +  " vFirst = " + vFirst);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 215 + " | " + "vFirst = a1 + z2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " z2 = " + z2 + " | " +  " vFirst = " + vFirst);
 
             vSecond = b1 + c1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 216 + " ASSIGNMENT " +  " vSecond = " + vSecond +  " c1 = " + c1 +  " b1 = " + b1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 216 + " | " + "vSecond = b1 + c1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " vSecond = " + vSecond + " | " +  " c1 = " + c1 + " | " +  " b1 = " + b1);
 
 
             // WeakHashLen32WithSeeds
@@ -255,34 +255,34 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 216 + " ASS
             long y1 = fetch64(access, in, off + 32L + 16L);
             long z1 = fetch64(access, in, off + 32L + 24L);
             a += w1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 225 + " ASSIGNMENT " +  " a = " + a +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 225 + " | " + "a += w1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " w1 = " + w1);
 
             b = rotateRight(b + a + z1, 21);
             long c = a;
             a += x1 + y1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 228 + " ASSIGNMENT " +  " a = " + a +  " y1 = " + y1 +  " x1 = " + x1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 228 + " | " + "a += x1 + y1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " y1 = " + y1 + " | " +  " x1 = " + x1);
 
             b += rotateRight(a, 44);
             wFirst = a + z1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 230 + " ASSIGNMENT " +  " a = " + a +  " wFirst = " + wFirst +  " z1 = " + z1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 230 + " | " + "wFirst = a + z1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " wFirst = " + wFirst + " | " +  " z1 = " + z1);
 
             wSecond = b + c;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 231 + " ASSIGNMENT " +  " b = " + b +  " c = " + c +  " wSecond = " + wSecond);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 231 + " | " + "wSecond = b + c;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " b = " + b + " | " +  " c = " + c + " | " +  " wSecond = " + wSecond);
 
 
             long tmp = x;
             x = z;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 234 + " ASSIGNMENT " +  " x = " + x +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 234 + " | " + "x = z;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " z = " + z);
 
             z = tmp;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 235 + " ASSIGNMENT " +  " tmp = " + tmp +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 235 + " | " + "z = tmp;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " tmp = " + tmp + " | " +  " z = " + z);
 
 
             len -= 64L;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 237 + " ASSIGNMENT " +  " len = " + len +  " 64L = " + 64L);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 237 + " | " + "len -= 64L;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " len = " + len + " | " +  " 64L = " + 64L);
 
             off += 64L;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 238 + " ASSIGNMENT " +  " off = " + off +  " 64L = " + 64L);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 238 + " | " + "off += 64L;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " off = " + off + " | " +  " 64L = " + 64L);
 
         } while (len != 0);
         return hashLen16(hashLen16(vFirst, wFirst) + shiftMix(y) * K1 + z,
@@ -325,7 +325,7 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 238 + " ASS
         @Override
         public long hashLong(long input) {
             input = NATIVE_CITY.toLittleEndian(input);
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 279 + " ASSIGNMENT " +  " input = " + input +  " static final net.openhft.hashing.CityAndFarmHash_1_1 NATIVE_CITY = " + NATIVE_CITY);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 279 + " | " + "input = NATIVE_CITY.toLittleEndian(input);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " static final net.openhft.hashing.CityAndFarmHash_1_1 NATIVE_CITY = " + NATIVE_CITY);
 
             long hash = hash8To16Bytes(8L, input, input);
             return finalize(hash);
@@ -334,7 +334,7 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 279 + " ASS
         @Override
         public long hashInt(int input) {
             input = NATIVE_CITY.toLittleEndian(input);
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 279 + " ASSIGNMENT " +  " input = " + input +  " static final net.openhft.hashing.CityAndFarmHash_1_1 NATIVE_CITY = " + NATIVE_CITY);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 279 + " | " + "input = NATIVE_CITY.toLittleEndian(input);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " input = " + input + " | " +  " static final net.openhft.hashing.CityAndFarmHash_1_1 NATIVE_CITY = " + NATIVE_CITY);
 
             long unsignedInt = Primitives.unsignedInt(input);
             long hash = hash4To7Bytes(4L, unsignedInt, unsignedInt);
@@ -401,13 +401,13 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 279 + " ASS
 
         private AsLongHashFunctionSeeded(long seed0, long seed1) {
             this.seed0 = seed0;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 351 + " ASSIGNMENT " +  " final long seed0 = " + seed0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 351 + " | " + "this.seed0 = seed0;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " final long seed0 = " + seed0);
 
             this.seed1 = seed1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 352 + " ASSIGNMENT " +  " final long seed1 = " + seed1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 352 + " | " + "this.seed1 = seed1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " final long seed1 = " + seed1);
 
             voidHash = finalize(K2);
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 353 + " ASSIGNMENT " +  " static final long K2 = " + K2 +  " private transient long voidHash = " + voidHash);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 353 + " | " + "voidHash = finalize(K2);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " static final long K2 = " + K2 + " | " +  " private transient long voidHash = " + voidHash);
 
         }
 
@@ -481,7 +481,7 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 353 + " ASS
             x = rotateRight(x + y + v1 + fetch64(access, in, off + 8), 37) * K1;
             y = rotateRight(y + v2 + fetch64(access, in, off + 48), 42) * K1;
             x ^= w2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 425 + " ASSIGNMENT " +  " x = " + x +  " w2 = " + w2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 425 + " | " + "x ^= w2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " w2 = " + w2);
 
             y += v1 + fetch64(access, in, off + 40);
             z = rotateRight(z + w1, 33) * K1;
@@ -495,10 +495,10 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 425 + " ASS
             a += fetch64(access, in, off + 16);
             b += rotateRight(a, 44);
             v1 = a + z1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 437 + " ASSIGNMENT " +  " a = " + a +  " z1 = " + z1 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 437 + " | " + "v1 = a + z1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " z1 = " + z1 + " | " +  " v1 = " + v1);
 
             v2 = b + c;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 438 + " ASSIGNMENT " +  " b = " + b +  " c = " + c +  " v2 = " + v2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 438 + " | " + "v2 = b + c;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " b = " + b + " | " +  " c = " + c + " | " +  " v2 = " + v2);
 
             long a1 = z + w2;
             long b1 = y + fetch64(access, in, off + 16);
@@ -510,40 +510,40 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 438 + " ASS
             a1 += fetch64(access, in, off + 32 + 16);
             b1 += rotateRight(a1, 44);
             w1 = a1 + z2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 448 + " ASSIGNMENT " +  " a1 = " + a1 +  " z2 = " + z2 +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 448 + " | " + "w1 = a1 + z2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " z2 = " + z2 + " | " +  " w1 = " + w1);
 
             w2 = b1 + c1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 449 + " ASSIGNMENT " +  " w2 = " + w2 +  " c1 = " + c1 +  " b1 = " + b1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 449 + " | " + "w2 = b1 + c1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w2 = " + w2 + " | " +  " c1 = " + c1 + " | " +  " b1 = " + b1);
 
             long t = z;
             z = x;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 451 + " ASSIGNMENT " +  " x = " + x +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 451 + " | " + "z = x;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " z = " + z);
 
             x = t;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 452 + " ASSIGNMENT " +  " t = " + t +  " x = " + x);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 452 + " | " + "x = t;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " t = " + t + " | " +  " x = " + x);
 
         } while ((off += 64) != end);
 
         off = last64;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 455 + " ASSIGNMENT " +  " last64 = " + last64 +  " off = " + off);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 455 + " | " + "off = last64;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " last64 = " + last64 + " | " +  " off = " + off);
 
 
         long mul = K1 + ((z & 0xff) << 1);
 
         // Make s point to the last 64 bytes of input.
         w1 += (len - 1) & 63;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 460 + " ASSIGNMENT " +  " len = " + len +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 460 + " | " + "w1 += (len - 1) & 63;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " len = " + len + " | " +  " w1 = " + w1);
 
         v1 += w1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 461 + " ASSIGNMENT " +  " w1 = " + w1 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 461 + " | " + "v1 += w1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w1 = " + w1 + " | " +  " v1 = " + v1);
 
         w1 += v1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 462 + " ASSIGNMENT " +  " w1 = " + w1 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 462 + " | " + "w1 += v1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w1 = " + w1 + " | " +  " v1 = " + v1);
 
         x = rotateRight(x + y + v1 + fetch64(access, in, off + 8), 37) * mul;
         y = rotateRight(y + v2 + fetch64(access, in, off + 48), 42) * mul;
         x ^= w2 * 9;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 465 + " ASSIGNMENT " +  " x = " + x +  " w2 = " + w2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 465 + " | " + "x ^= w2 * 9;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " w2 = " + w2);
 
         y += v1 * 9 + fetch64(access, in, off + 40);
         z = rotateRight(z + w1, 33) * mul;
@@ -557,10 +557,10 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 465 + " ASS
         a += fetch64(access, in, off + 16);
         b += rotateRight(a, 44);
         v1 = a + z1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 437 + " ASSIGNMENT " +  " a = " + a +  " z1 = " + z1 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 437 + " | " + "v1 = a + z1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a + " | " +  " z1 = " + z1 + " | " +  " v1 = " + v1);
 
         v2 = b + c;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 438 + " ASSIGNMENT " +  " b = " + b +  " c = " + c +  " v2 = " + v2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 438 + " | " + "v2 = b + c;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " b = " + b + " | " +  " c = " + c + " | " +  " v2 = " + v2);
 
         long a1 = z + w2;
         long b1 = y + fetch64(access, in, off + 16);
@@ -572,17 +572,17 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 438 + " ASS
         a1 += fetch64(access, in, off + 32 + 16);
         b1 += rotateRight(a1, 44);
         w1 = a1 + z2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 448 + " ASSIGNMENT " +  " a1 = " + a1 +  " z2 = " + z2 +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 448 + " | " + "w1 = a1 + z2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " z2 = " + z2 + " | " +  " w1 = " + w1);
 
         w2 = b1 + c1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 449 + " ASSIGNMENT " +  " w2 = " + w2 +  " c1 = " + c1 +  " b1 = " + b1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 449 + " | " + "w2 = b1 + c1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w2 = " + w2 + " | " +  " c1 = " + c1 + " | " +  " b1 = " + b1);
 
         long t = z;
         z = x;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 451 + " ASSIGNMENT " +  " x = " + x +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 451 + " | " + "z = x;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " z = " + z);
 
         x = t;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 452 + " ASSIGNMENT " +  " t = " + t +  " x = " + x);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 452 + " | " + "x = t;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " t = " + t + " | " +  " x = " + x);
 
         return hashLen16(hashLen16(v1, w1, mul) + shiftMix(y) * K0 + z,
                 hashLen16(v2, w2, mul) + x,
@@ -596,7 +596,7 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 452 + " ASS
     long uoH(long x, long y, long mul, int r) {
         long a = (x ^ y) * mul;
         a = shiftMix(a);
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 504 + " ASSIGNMENT " +  " a = " + a);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 504 + " | " + "a = shiftMix(a);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a = " + a);
 
         long b = (y ^ a) * mul;
         return rotateRight(b, r) * mul;
@@ -616,7 +616,7 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 504 + " ASS
         long w1 = 0;
         long u = x - z;
         x *= K2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 522 + " ASSIGNMENT " +  " static final long K2 = " + K2 +  " x = " + x);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 522 + " | " + "x *= K2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " static final long K2 = " + K2 + " | " +  " x = " + x);
 
         long mul = K2 + (u & 0x82);
 
@@ -633,140 +633,140 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 522 + " ASS
             long a6 = fetch64(access, in, off + 48);
             long a7 = fetch64(access, in, off + 56);
             x += a0 + a1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 537 + " ASSIGNMENT " +  " a1 = " + a1 +  " x = " + x +  " a0 = " + a0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 537 + " | " + "x += a0 + a1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " x = " + x + " | " +  " a0 = " + a0);
 
             y += a2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 538 + " ASSIGNMENT " +  " a2 = " + a2 +  " y = " + y);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 538 + " | " + "y += a2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a2 = " + a2 + " | " +  " y = " + y);
 
             z += a3;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 539 + " ASSIGNMENT " +  " a3 = " + a3 +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 539 + " | " + "z += a3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a3 = " + a3 + " | " +  " z = " + z);
 
             v0 += a4;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 540 + " ASSIGNMENT " +  " a4 = " + a4 +  " v0 = " + v0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 540 + " | " + "v0 += a4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a4 = " + a4 + " | " +  " v0 = " + v0);
 
             v1 += a5 + a1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 541 + " ASSIGNMENT " +  " a1 = " + a1 +  " a5 = " + a5 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 541 + " | " + "v1 += a5 + a1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " a5 = " + a5 + " | " +  " v1 = " + v1);
 
             w0 += a6;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 542 + " ASSIGNMENT " +  " a6 = " + a6 +  " w0 = " + w0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 542 + " | " + "w0 += a6;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a6 = " + a6 + " | " +  " w0 = " + w0);
 
             w1 += a7;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 543 + " ASSIGNMENT " +  " a7 = " + a7 +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 543 + " | " + "w1 += a7;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a7 = " + a7 + " | " +  " w1 = " + w1);
 
 
             x = rotateRight(x, 26);
             x *= 9;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 546 + " ASSIGNMENT " +  " x = " + x);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 546 + " | " + "x *= 9;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x);
 
             y = rotateRight(y, 29);
             z *= mul;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 548 + " ASSIGNMENT " +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 548 + " | " + "z *= mul;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " z = " + z);
 
             v0 = rotateRight(v0, 33);
             v1 = rotateRight(v1, 30);
             w0 ^= x;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 551 + " ASSIGNMENT " +  " x = " + x +  " w0 = " + w0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 551 + " | " + "w0 ^= x;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " w0 = " + w0);
 
             w0 *= 9;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 552 + " ASSIGNMENT " +  " w0 = " + w0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 552 + " | " + "w0 *= 9;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w0 = " + w0);
 
             z = rotateRight(z, 32);
             z += w1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 554 + " ASSIGNMENT " +  " z = " + z +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 554 + " | " + "z += w1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " z = " + z + " | " +  " w1 = " + w1);
 
             w1 += z;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 555 + " ASSIGNMENT " +  " w1 = " + w1 +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 555 + " | " + "w1 += z;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w1 = " + w1 + " | " +  " z = " + z);
 
             z *= 9;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 556 + " ASSIGNMENT " +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 556 + " | " + "z *= 9;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " z = " + z);
 
 
             long t = u;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 578 + " ASSIGNMENT " +  " t = " + t +  " u = " + u);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 578 + " | " + "t = u;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " t = " + t + " | " +  " u = " + u);
 
             u = y;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 559 + " ASSIGNMENT " +  " u = " + u +  " y = " + y);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 559 + " | " + "u = y;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " u = " + u + " | " +  " y = " + y);
 
             y = t;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 560 + " ASSIGNMENT " +  " t = " + t +  " y = " + y);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 560 + " | " + "y = t;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " t = " + t + " | " +  " y = " + y);
 
 
             z += a0 + a6;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 562 + " ASSIGNMENT " +  " a6 = " + a6 +  " z = " + z +  " a0 = " + a0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 562 + " | " + "z += a0 + a6;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a6 = " + a6 + " | " +  " z = " + z + " | " +  " a0 = " + a0);
 
             v0 += a2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 563 + " ASSIGNMENT " +  " a2 = " + a2 +  " v0 = " + v0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 563 + " | " + "v0 += a2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a2 = " + a2 + " | " +  " v0 = " + v0);
 
             v1 += a3;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 564 + " ASSIGNMENT " +  " a3 = " + a3 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 564 + " | " + "v1 += a3;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a3 = " + a3 + " | " +  " v1 = " + v1);
 
             w0 += a4;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 565 + " ASSIGNMENT " +  " a4 = " + a4 +  " w0 = " + w0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 565 + " | " + "w0 += a4;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a4 = " + a4 + " | " +  " w0 = " + w0);
 
             w1 += a5 + a6;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 566 + " ASSIGNMENT " +  " a5 = " + a5 +  " a6 = " + a6 +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 566 + " | " + "w1 += a5 + a6;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a5 = " + a5 + " | " +  " a6 = " + a6 + " | " +  " w1 = " + w1);
 
             x += a1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 567 + " ASSIGNMENT " +  " a1 = " + a1 +  " x = " + x);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 567 + " | " + "x += a1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " x = " + x);
 
             y += a7;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 568 + " ASSIGNMENT " +  " a7 = " + a7 +  " y = " + y);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 568 + " | " + "y += a7;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a7 = " + a7 + " | " +  " y = " + y);
 
 
             y += v0;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 570 + " ASSIGNMENT " +  " y = " + y +  " v0 = " + v0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 570 + " | " + "y += v0;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " y = " + y + " | " +  " v0 = " + v0);
 
             v0 += x - y;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 571 + " ASSIGNMENT " +  " x = " + x +  " y = " + y +  " v0 = " + v0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 571 + " | " + "v0 += x - y;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " y = " + y + " | " +  " v0 = " + v0);
 
             v1 += w0;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 572 + " ASSIGNMENT " +  " w0 = " + w0 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 572 + " | " + "v1 += w0;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w0 = " + w0 + " | " +  " v1 = " + v1);
 
             w0 += v1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 573 + " ASSIGNMENT " +  " w0 = " + w0 +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 573 + " | " + "w0 += v1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w0 = " + w0 + " | " +  " v1 = " + v1);
 
             w1 += x - y;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 574 + " ASSIGNMENT " +  " x = " + x +  " y = " + y +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 574 + " | " + "w1 += x - y;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " y = " + y + " | " +  " w1 = " + w1);
 
             x += w1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 575 + " ASSIGNMENT " +  " x = " + x +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 575 + " | " + "x += w1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " w1 = " + w1);
 
             w1 = rotateRight(w1, 34);
 
             t = u;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 578 + " ASSIGNMENT " +  " t = " + t +  " u = " + u);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 578 + " | " + "t = u;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " t = " + t + " | " +  " u = " + u);
 
             u = z;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 579 + " ASSIGNMENT " +  " u = " + u +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 579 + " | " + "u = z;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " u = " + u + " | " +  " z = " + z);
 
             z = t;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 580 + " ASSIGNMENT " +  " t = " + t +  " z = " + z);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 580 + " | " + "z = t;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " t = " + t + " | " +  " z = " + z);
 
 
         } while ((off += 64) != end);
 
         off = last64;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 455 + " ASSIGNMENT " +  " last64 = " + last64 +  " off = " + off);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 455 + " | " + "off = last64;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " last64 = " + last64 + " | " +  " off = " + off);
 
 
         u *= 9;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 586 + " ASSIGNMENT " +  " u = " + u);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 586 + " | " + "u *= 9;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " u = " + u);
 
         v1 = rotateRight(v1, 28);
         v0 = rotateRight(v0, 20);
         w0 += (len - 1) & 63;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 589 + " ASSIGNMENT " +  " len = " + len +  " w0 = " + w0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 589 + " | " + "w0 += (len - 1) & 63;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " len = " + len + " | " +  " w0 = " + w0);
 
         u += y;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 590 + " ASSIGNMENT " +  " u = " + u +  " y = " + y);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 590 + " | " + "u += y;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " u = " + u + " | " +  " y = " + y);
 
         y += u;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 591 + " ASSIGNMENT " +  " u = " + u +  " y = " + y);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 591 + " | " + "y += u;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " u = " + u + " | " +  " y = " + y);
 
         x = rotateRight(y - x + v0 + fetch64(access, in, off + 8), 37) * mul;
         y = rotateRight(y ^ v1 ^ fetch64(access, in, off + 48), 42) * mul;
         x ^= w1 * 9;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 594 + " ASSIGNMENT " +  " x = " + x +  " w1 = " + w1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 594 + " | " + "x ^= w1 * 9;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " x = " + x + " | " +  " w1 = " + w1);
 
         y += v0 + fetch64(access, in, off + 40);
         z = rotateRight(z + w0, 33) * mul;
@@ -782,7 +782,7 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 594 + " ASS
         b += rotateRight(a, 44);
         v0 =  a + z1;
         v1 = b + c;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 608 + " ASSIGNMENT " +  " b = " + b +  " c = " + c +  " v1 = " + v1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 608 + " | " + "v1 = b + c;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " b = " + b + " | " +  " c = " + c + " | " +  " v1 = " + v1);
 
 
         long a1 = z + w1;
@@ -795,10 +795,10 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 608 + " ASS
         a1 += fetch64(access, in, off + 32 + 16);
         b1 += rotateRight(a1, 44);
         w0 = a1 + z2;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 619 + " ASSIGNMENT " +  " a1 = " + a1 +  " z2 = " + z2 +  " w0 = " + w0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 619 + " | " + "w0 = a1 + z2;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " a1 = " + a1 + " | " +  " z2 = " + z2 + " | " +  " w0 = " + w0);
 
         w1 = b1 + c1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 620 + " ASSIGNMENT " +  " w1 = " + w1 +  " c1 = " + c1 +  " b1 = " + b1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 620 + " | " + "w1 = b1 + c1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " w1 = " + w1 + " | " +  " c1 = " + c1 + " | " +  " b1 = " + b1);
 
         return uoH(hashLen16(v0 + x, w0 ^ y, mul) + z - u,
                 uoH(v1 + y, w1 + z, K2, 30) ^ x,
@@ -838,13 +838,13 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 620 + " ASS
 
         private NaSeeded(long seed0, long seed1) {
             this.seed0 = seed0;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 351 + " ASSIGNMENT " +  " final long seed0 = " + seed0);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 351 + " | " + "this.seed0 = seed0;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " final long seed0 = " + seed0);
 
             this.seed1 = seed1;
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 352 + " ASSIGNMENT " +  " final long seed1 = " + seed1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 352 + " | " + "this.seed1 = seed1;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " final long seed1 = " + seed1);
 
             voidHash = finalize(K2);
-eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 353 + " ASSIGNMENT " +  " static final long K2 = " + K2 +  " private transient long voidHash = " + voidHash);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 353 + " | " + "voidHash = finalize(K2);" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " static final long K2 = " + K2 + " | " +  " private transient long voidHash = " + voidHash);
 
         }
 

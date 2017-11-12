@@ -64,18 +64,34 @@ class MurmurHash_3 {
             long k1 = fetch64(access, input, offset);
             long k2 = fetch64(access, input, offset + 8L);
             offset += 16L;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 66 + " ASSIGNMENT " +  " offset = " + offset +  " 16L = " + 16L);
+
             remaining -= 16L;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 67 + " ASSIGNMENT " +  " 16L = " + 16L +  " remaining = " + remaining);
+
             h1 ^= mixK1(k1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 68 + " ASSIGNMENT " +  " k1 = " + k1 +  " h1 = " + h1);
+
 
             h1 = Long.rotateLeft(h1, 27);
             h1 += h2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 71 + " ASSIGNMENT " +  " h1 = " + h1 +  " h2 = " + h2);
+
             h1 = h1 * 5L + 0x52dce729L;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 72 + " ASSIGNMENT " +  " 0x52dce729L = " + 0x52dce729L +  " 5L = " + 5L +  " h1 = " + h1);
+
 
             h2 ^= mixK2(k2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 74 + " ASSIGNMENT " +  " k2 = " + k2 +  " h2 = " + h2);
+
 
             h2 = Long.rotateLeft(h2, 31);
             h2 += h1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 77 + " ASSIGNMENT " +  " h1 = " + h1 +  " h2 = " + h2);
+
             h2 = h2 * 5L + 0x38495ab5L;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 78 + " ASSIGNMENT " +  " 5L = " + 5L +  " 0x38495ab5L = " + 0x38495ab5L +  " h2 = " + h2);
+
         }
 
         if (remaining > 0L) {
@@ -120,45 +136,83 @@ class MurmurHash_3 {
                     throw new AssertionError("Should never get here.");
             }
             h1 ^= mixK1(k1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 68 + " ASSIGNMENT " +  " k1 = " + k1 +  " h1 = " + h1);
+
             h2 ^= mixK2(k2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 74 + " ASSIGNMENT " +  " k2 = " + k2 +  " h2 = " + h2);
+
         }
+
+
         return finalize(length, h1, h2);
     }
 
     private static long finalize(long length, long h1, long h2) {
         h1 ^= length;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 199 + " ASSIGNMENT " +  " length = " + length +  " h1 = " + h1);
+
         h2 ^= length;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 200 + " ASSIGNMENT " +  " length = " + length +  " h2 = " + h2);
+
 
         h1 += h2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 71 + " ASSIGNMENT " +  " h1 = " + h1 +  " h2 = " + h2);
+
         h2 += h1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 77 + " ASSIGNMENT " +  " h1 = " + h1 +  " h2 = " + h2);
+
 
         h1 = fmix64(h1);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 205 + " ASSIGNMENT " +  " h1 = " + h1);
+
         h2 = fmix64(h2);
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 206 + " ASSIGNMENT " +  " h2 = " + h2);
+
 
         h1 += h2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 71 + " ASSIGNMENT " +  " h1 = " + h1 +  " h2 = " + h2);
+
         return h1;
     }
 
     private static long fmix64(long k) {
         k ^= k >>> 33;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 213 + " ASSIGNMENT " +  " k = " + k);
+
         k *= 0xff51afd7ed558ccdL;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 214 + " ASSIGNMENT " +  " 0xff51afd7ed558ccdL = " + 0xff51afd7ed558ccdL +  " k = " + k);
+
         k ^= k >>> 33;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 213 + " ASSIGNMENT " +  " k = " + k);
+
         k *= 0xc4ceb9fe1a85ec53L;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 216 + " ASSIGNMENT " +  " 0xc4ceb9fe1a85ec53L = " + 0xc4ceb9fe1a85ec53L +  " k = " + k);
+
         k ^= k >>> 33;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 213 + " ASSIGNMENT " +  " k = " + k);
+
         return k;
     }
 
     private static long mixK1(long k1) {
         k1 *= C1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 222 + " ASSIGNMENT " +  " k1 = " + k1 +  " private static final long C1 = " + C1);
+
         k1 = Long.rotateLeft(k1, 31);
         k1 *= C2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 224 + " ASSIGNMENT " +  " k1 = " + k1 +  " private static final long C2 = " + C2);
+
         return k1;
     }
 
     private static long mixK2(long k2) {
         k2 *= C2;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 229 + " ASSIGNMENT " +  " k2 = " + k2 +  " private static final long C2 = " + C2);
+
         k2 = Long.rotateLeft(k2, 33);
         k2 *= C1;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 231 + " ASSIGNMENT " +  " k2 = " + k2 +  " private static final long C1 = " + C1);
+
         return k2;
     }
 

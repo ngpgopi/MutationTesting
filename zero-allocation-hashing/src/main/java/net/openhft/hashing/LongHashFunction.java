@@ -76,9 +76,13 @@ public abstract class LongHashFunction implements Serializable {
         byte trueByteValue, falseByteValue;
         try {
             trueByteValue = trueByteValue();
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 78 + " | " + "trueByteValue = trueByteValue();" + " | " + "src\\main\\java\\net" + " | " + " EXPRESSION " + " | " +  " trueByteValue = " + trueByteValue);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 78 + " EXPRESSION " +  " trueByteValue = " + trueByteValue);
 
             falseByteValue = falseByteValue();
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 81 + " | " + "falseByteValue = falseByteValue();" + " | " + "src\\main\\java\\net" + " | " + " EXPRESSION " + " | " +  " falseByteValue = " + falseByteValue);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 79 + " EXPRESSION " +  " falseByteValue = " + falseByteValue);
 
         } catch (Throwable t) {
@@ -88,9 +92,13 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 79 + " EXPR
         }
 
         TRUE_BYTE_VALUE = trueByteValue;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 90 + " | " + "TRUE_BYTE_VALUE = trueByteValue;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final byte TRUE_BYTE_VALUE = " + TRUE_BYTE_VALUE);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 86 + " ASSIGNMENT " +  " private static final byte TRUE_BYTE_VALUE = " + TRUE_BYTE_VALUE);
 
         FALSE_BYTE_VALUE = falseByteValue;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 93 + " | " + "FALSE_BYTE_VALUE = falseByteValue;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static final byte FALSE_BYTE_VALUE = " + FALSE_BYTE_VALUE);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 87 + " ASSIGNMENT " +  " private static final byte FALSE_BYTE_VALUE = " + FALSE_BYTE_VALUE);
 
     }
@@ -305,21 +313,29 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 87 + " ASSI
                 if (javaVersion.compareTo("1.7.0_06") >= 0) {
                     if (javaVersion.compareTo("1.9") >= 0) {
                         stringHash = UnknownJvmStringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 307 + " | " + "stringHash = UnknownJvmStringHash.INSTANCE;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static StringHash stringHash = " + stringHash);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 299 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
 
                     } else {
                         stringHash = ModernHotSpotStringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 311 + " | " + "stringHash = ModernHotSpotStringHash.INSTANCE;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static StringHash stringHash = " + stringHash);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 301 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
 
                     }
                 } else {
                     stringHash = HotSpotPrior7u6StringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 316 + " | " + "stringHash = HotSpotPrior7u6StringHash.INSTANCE;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static StringHash stringHash = " + stringHash);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 304 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
 
                 }
             } else {
                 // try to initialize this version anyway
                 stringHash = HotSpotPrior7u6StringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 316 + " | " + "stringHash = HotSpotPrior7u6StringHash.INSTANCE;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static StringHash stringHash = " + stringHash);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 304 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
 
             }
@@ -328,6 +344,8 @@ eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 304 + " ASS
         } finally {
             if (stringHash == null)
                 stringHash = UnknownJvmStringHash.INSTANCE;
+eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + " | " + 307 + " | " + "stringHash = UnknownJvmStringHash.INSTANCE;" + " | " + "src\\main\\java\\net" + " | " + " ASSIGNMENT " + " | " +  " private static StringHash stringHash = " + stringHash);
+
 eclipse.ast.parser.InstrumentationTemplate.instrum(" line number " + 299 + " ASSIGNMENT " +  " private static StringHash stringHash = " + stringHash);
 
         }
